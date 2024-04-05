@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --second-family:"Barlow", sans-serif;
+}
+
+body {
+  font-family: "Fraunces", serif;
+}
+
+.container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  padding-top: 32px;
+}
+
+.header__logo {
+  display: inline-block;
+  width: 163px;
+}
+
+.header__btn {
+  width: 16px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-image: url("../img/menu-icon.svg ");
+  border: none;
+  background-color: transparent;
+}
+
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__list {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 33px;
+}
+
+.header__link {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #83888f;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 40px;
+  }
+  .header__logo {
+    width: 236px;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header {
+    padding-top: 43px;
+  }
+}
+.hero {
+  padding-top: 36px;
+  margin-bottom: 168px;
+}
+
+.hero__block {
+  background-repeat: no-repeat;
+  background-image: url("../img/hero-destkop.png");
+  background-size: cover;
+  padding: 111px 24px;
+  border-radius: 10px;
+  height: 400px;
+  padding-left: 85px;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 100%;
+  color: #fefcf7;
+  margin-bottom: 24px;
+}
+
+.hero__text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+  color: #fefcf7;
+}
+
+.hero-text {
+  max-width: 445px;
+}
+
+.commit {
+  padding-bottom: 168px;
+}
+.commit .commit-inner {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.commit .commit-inner .commit-photo img {
+  width: 445px;
+  height: 520px;
+}
+.commit .commit-inner .commit-text {
+  width: 540px;
+}
+.commit .commit-inner .commit-text h3 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 120%;
+  color: #333d4b;
+  margin-bottom: 32px;
+}
+.commit .commit-inner .commit-text p {
+  line-height: 162%;
+  color: #333d4b;
+  opacity: 0.8;
+}
+
+.quality {
+  background: #2c343e;
+  height: 474px;
+  width: 100%;
+}
+.quality .quality-inner {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-top: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.quality .quality-inner .quality-text {
+  width: 540px;
+}
+.quality .quality-inner .quality-text h3 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 120%;
+  color: #fefcf7;
+  margin-bottom: 32px;
+}
+.quality .quality-inner .quality-text p {
+  line-height: 162%;
+  color: #fefcf7;
+  opacity: 0.8;
+}
+.quality .quality-inner .quality-photo {
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+.quality .quality-inner .quality-photo img {
+  width: 445px;
+  height: 474px;
+}/*# sourceMappingURL=main.css.map */
